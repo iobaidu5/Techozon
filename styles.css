@@ -1,0 +1,73 @@
+body {
+  background: #1A202C !important;
+}
+
+.main {
+  background-color: #eee;
+  padding: 50px;
+  margin: 25px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .1), 0 2px 24px rgba(0, 0, 0, .2);
+  border: 0;
+
+}
+
+.boxes {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+}
+
+.zoomHolder {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden
+}
+
+.fill {
+  background-image: url('assets/techozon.png');
+  object-fit: cover;
+  position: relative;
+  height: 190px;
+  width: 190px;
+  margin: 1px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.empty {
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border: solid 3px #234687;
+  background: white;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border: 5px dashed #1A202C;
+}
+
+
+.checkboxzoom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px !important;
+  width: 200px !important;
+  padding: 200px !important;
+  color: steelblue;
+  background-color: steelblue;
+}
